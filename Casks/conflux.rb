@@ -2,16 +2,16 @@
   # frozen_string_literal: true
 
   cask "conflux" do
-  version "0.3.2"
+  version "0.3.3"
 
     on_intel do
-    sha256 "e6ee48418876f59aac2d2237a065638c1c4041bc6932690b49bca3ae1bc1097e"
+    sha256 "75f27cc1d2dbdaacee1a5a7133c1b78dd3d9dff9c9a3169e819175b136a5dd42"
       url "https://github.com/veildawn/conflux-app/releases/download/v#{version}/Conflux_#{version}_x64.dmg",
           verified: "github.com/veildawn/conflux-app/"
     end
 
     on_arm do
-    sha256 "26b9243617b226fae6cda4970375b248ee8fcc2a3f75f562e1cee702938c3c59"
+    sha256 "447dae6664717cd0a99f5f707c9a5ad65079f8366082b85e98b00cbc86111aee"
       url "https://github.com/veildawn/conflux-app/releases/download/v#{version}/Conflux_#{version}_aarch64.dmg",
           verified: "github.com/veildawn/conflux-app/"
     end
