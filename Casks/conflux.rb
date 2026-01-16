@@ -5,13 +5,13 @@
   version "0.3.7"
 
     on_intel do
-    sha256 "3adcbaa4b3f426a85d3b511ccd68060864e82d225e1ec82d8a113380d57b74f5"
+    sha256 "dfac47107ed76d751d4d62514c3813a1d9db2b73fed97eb633af2ca9fce06485"
       url "https://github.com/veildawn/conflux-app/releases/download/v#{version}/Conflux_#{version}_x64.dmg",
           verified: "github.com/veildawn/conflux-app/"
     end
 
     on_arm do
-    sha256 "3a557d759f003a8ed338197f11ad0a56dff1d2804412775c23fdfbf16fe3bbf0"
+    sha256 "66aa16c104cfc0cb1aceb055cc3755c4dfaf6de83a4504777d80bc420c78f283"
       url "https://github.com/veildawn/conflux-app/releases/download/v#{version}/Conflux_#{version}_aarch64.dmg",
           verified: "github.com/veildawn/conflux-app/"
     end
