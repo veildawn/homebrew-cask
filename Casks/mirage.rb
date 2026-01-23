@@ -1,9 +1,9 @@
 cask "mirage" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.1.1"
-  sha256 arm:   "c46516766a7d1d2fa7f82971b7f8cecb49d4a404d83739b707a25c8bf5245657",
-         intel: "050a6de1672277376e99b1bcf0afb9433d825e59774761284c89fd184fa862be"
+  version "0.1.2"
+  sha256 arm:   "2b9663e2436d806477dd7f29684a7348f3142a889e8ac51da4e2fcb162e14759",
+         intel: "3e3cd1f7f15197047ff8de75ab4a064572898f05a536b2a0bad38efea04d8966"
 
   url "https://github.com/veildawn/homebrew-cask/releases/download/mirage-v#{version}/Mirage_#{version}_#{arch}.dmg"
   name "Mirage"
@@ -14,7 +14,7 @@ cask "mirage" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Mirage.app"]
+         args: ["-cr", "#{appdir}/Mirage.app"]
   end
 
   zap trash: [
