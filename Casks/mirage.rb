@@ -14,8 +14,7 @@ cask "mirage" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Mirage.app"],
-                   sudo: true
+                   args: ["-cr", "#{appdir}/Mirage.app"]
   end
 
   zap trash: [
