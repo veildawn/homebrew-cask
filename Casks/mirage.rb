@@ -1,9 +1,9 @@
 cask "mirage" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.1.5"
-  sha256 arm:   "2575a0645882726e4dc62ddc00c4d08fa51e9532dc63c4ad17dc469a534d5f41",
-         intel: "9e5dff2fbca1a62315e1296d4406982ea7a78958a1b4a8a1dd8ddd0653bb1b3e"
+  version "0.1.6"
+  sha256 arm:   "3ac23271ce372d4a50275092b2ee21c564118bc861f1ca8be74c881ec97934da",
+         intel: "aea5530f7efb53ee354f3f119566a6f8465d89cd2fb51e720d6c2cb4620531c0"
 
   url "https://github.com/veildawn/homebrew-cask/releases/download/mirage-v#{version}/Mirage_#{version}_#{arch}.dmg"
   name "Mirage"
