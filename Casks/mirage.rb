@@ -12,6 +12,12 @@ cask "mirage" do
 
   app "Mirage.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Mirage.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.veildawn.mirage",
     "~/Library/Caches/com.veildawn.mirage",
